@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.linkdesign1{
+    color: rgba(0, 0, 0, 0.80);
+    text-align: right;
+    font-size: 1.5em;
+}
+
+
+
+.big-header-container {
+    height: 100vh;
+    background-color: #d6001c;
+    display: flex;
+    flex-direction: column;
+}
+/* header-top */
+.big-header-top {
+    height: 30%;
+}
+.header-ikon {
+    position: absolute;
+    padding: 30px;           /* help */
+}
+.header-ikon img {
+    height: 60px;
+    width: 60px;        /* help */
+}
+.menu {
+    left: 0;
+}
+.search {
+    right: 0;
+}
+/* header text */
+.big-header-center {
+    height: 40%;
+}
+.big-header-text{
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.big-header-text h1, .big-header-text h3{
+    color: white;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+.big-header-text h1{
+    font-size: 8em;
+    text-align: center;
+}
+.big-header-text h3 {
+    font-size: 2em;
+}
+/* header ikoner */
+.big-header-media{
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.header-media-ikon img{
+    height: 28px;
+    width: 28px;
+    padding-right: 10px;
+}
+
+/* home main */
+.home-main {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    background-color: blueviolet;
+}
+.home-main-dots {
+    width: 15%;
+    background-color: aqua;
+}
+.home-main-dots ul li {
+    font-size: 150px;
+    color: rgba(0, 0, 0, 0.25);
+}
+.home-main-bilde {
+    width: 1000px;
+    height: 1000px;
+    background-image: url("BILDER/statuewithphone2.jpg")
+}
+/* home main right */
+.home-main-right-top{
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;                /* change */
+    width: 65%;
+    padding-left: 10px;
+}
+
+
+.home-main-nav li {
+    list-style: none;
+}
+.home-main-nav li a {
+    text-decoration: none;
+}
+.home-main-nav li a p{
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 40px;
+    font-weight: 900;
+    padding-bottom: 40px;
+}
+
+
+.home-main-text {
+    padding-right: 40px;
+}
+.home-main-text p {
+    color: rgba(0, 0, 0, 0.80);
+    text-align: right;
+    font-size: 1.5em;
+}
+.home-main-buybtn a{
+    color: rgba(0, 0, 0, 0.80);
+    text-decoration: none;
+}
+.home-main-buybtn{
+    background-color: aqua;
+}
