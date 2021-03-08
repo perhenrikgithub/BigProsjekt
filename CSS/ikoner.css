@@ -1,0 +1,18 @@
+.ikon {
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    background-size: cover;
+    background-size: 100%;
+}
+
+
+.ikon-filter {
+    background-image: url(../BILDER/IKON/add-to-basket.png);
+}
+.ikon-menu {
+    background-image: url(../BILDER/IKON/menu.png);
+}
+.ikon-cart {
+    background-image: url(../BILDER/IKON/add-to-basket.png);
+}

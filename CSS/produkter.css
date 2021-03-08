@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.produkt-header {
+    height: 35vh;
+    width: 100%;
+    /* background-color: blue; */
+}
+.produkt-header-ikoner {
+    height: 30%;
+}
+.produkt-header-ikoner ul {
+    display: flex;
+    list-style: none;
+}
+.produkt-header-ikoner-ikon{
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    background-size: cover;
+    background-size: 100%;
+    margin: 10px 10px 0;
+    position: absolute;
+}
+.ikon-menu {
+    background-image: url(../BILDER/IKON/menu.png);
+    left: 0;
+}
+.ikon-search {
+    background-image: url(../BILDER/IKON/add-to-basket.png);    
+    right: 0;
+}
