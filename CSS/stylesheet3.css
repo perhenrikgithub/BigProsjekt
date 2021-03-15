@@ -14,6 +14,7 @@
 :root {
     --main: rgba(0,0,0,0.95);
     --main-fade: rgba(0,0,0,0.85);
+    --main-more-fade: rgba(0,0,0,0.35);
     --white: rgba(255,255,255,0.9);
     --white-fade: rgba(255,255,255,0.8);
     --brandcolor: blue;
@@ -33,6 +34,37 @@ body {
 .text-type-underline {
     font-size: 1.4vw;
 }
+.text-type-article-header {
+    font-size: 5vw;
+    font-weight: 500;
+    color: var(--main-fade);
+}
+.text-type-article-paragraph {
+    font-size: 1vw;
+    font-weight: 500;
+    color: var(--main-more-fade);
+    padding: 15px 15px 15px 0;
+}
+.text-type-linkstyle-large {
+    font-weight: 600;
+    color: blue;
+}
+.text-type-linkstyle-small {
+    padding-top: 10vh;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1vw;
+    
+}
+    /* other */
+/* .hr1 {
+    width: 90%;
+    margin: 3vh 3vw;
+    height: .8vw;
+    border-width: 0;
+    background-color:blue 
+} */
 /*==============
    2. header
 ==============*/
@@ -64,7 +96,6 @@ header {
 }
 .frontpage-image {
     background-image: url(../BILDER/gradient.png);
-    height: 80vh;
     width: 50%;
     background-size: cover;
     background-position: center;
@@ -82,4 +113,19 @@ header {
     padding: 2vh 2vw;
     list-style: none;
 }
-
+.frontpage-nav-producttype a:hover {
+    cursor: pointer;
+    padding: 8%;
+    transition: 100ms;
+    transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -ms-transition: ease-in-out;
+    -o-transition: ease-in-out;
+}
+/*==============
+   4. frontpage article
+==============*/
+.frontpage-article {
+    height: 40vh;   
+}
