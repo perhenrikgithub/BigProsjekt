@@ -5,5 +5,5 @@
         "../SASS/scss.scss"
     ],
     "names": [],
-    "file": "scss.css"
+    "file": "../CSS/scss.css"
 }
