@@ -1,0 +1,31 @@
+/*==============
+   1. 
+
+==============
+   1. General
+==============*/
+/* 1.1 :root * etc. */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.header-container {
+  height: 100vh;
+  background-color: #fff;
+  color: blue;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}
+
+.header-container .header-text {
+  font-size: 30vh;
+}
+
+.header-container .header-underline {
+  font-size: 6vh;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+/*==============
+   1. 
+
+==============
+   1. General
+==============*/
+/* 1.1 :root * etc. */
+$brand-color: blue;
+$main-color: rgba(0,0,0,0.95);
+$main-accent-color: rgba(0,0,0,0.35);
+$white-color: rgba(255,255,255,0.9);
+$white-accent-color: rgba(255,255,255,0.8);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.header-container {
+    height: 100vh;
+    background-color: #fff;
+    color: $brand-color;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+
+    .header-text {
+        font-size: 30vh;
+    }
+    .header-underline {
+        font-size: 6vh;
+    }
+}
