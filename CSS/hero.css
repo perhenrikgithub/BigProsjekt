@@ -8,6 +8,7 @@
 .hero {
     width: 100%;
     height: 100vh;
+    max-height: 800px;
     background-color: whitesmoke;
     position: relative;
 }
@@ -16,7 +17,7 @@
     height: 100vh;
     position: relative;
     display: flex;
-    transition: all 10s;
+    transition: all 100ms;
     overflow: hidden;
 }
 .slider .slide {
@@ -24,33 +25,67 @@
     height: 100%;
     position: relative;
     text-align: center;
-    transition: 0.5s;
+    transition: 200ms;
+    display: grid;
+    place-items: center;
+    
 }
 .slider .slide:nth-child(1) {
-    background: url("https://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/58489.jpg");
+    background: url(../BILDER/Apple-Poster1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
 }
 .slider .slide:nth-child(2) {
-    background: url("https://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/58488.jpg");
+    background: url(../BILDER/Samsung-poster1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
 }
 .slider .slide:nth-child(3) {
-    background: url("https://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/58487.jpg");
+    background: url(../BILDER/OnePlus-poster2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
 }
 .slider .slide:nth-child(4) {
-    background: url("https://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/58486.jpg");
+    background: url(../BILDER/Xiaomi-poster1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
 }
 .slider .slide:hover {
     width: 60%;
     cursor: pointer;
 }
+/* Hero typography */
+.hero-typography-container {
+    fill: rgba(255, 255, 255, 0.7);
+    margin: 5%;
+    /* display: grid;
+    place-items: center; */
+}
+
+.hero-header {
+    font-family: 'Montserrat', 'Spartan', sans-serif;
+    font-weight: 700;
+}
+
+/* Hero Brand-Logo */
+
+.hero-logo-container {
+    max-width: 250px;
+    max-height: 250px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 2vh 2vw;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+}
+.hero-logo-container img {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+    height: 100%;
+}
+

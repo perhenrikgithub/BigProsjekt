@@ -1,3 +1,3 @@
 # BigProsjekt
 
-Author: Per Henrik
+Author: Per Henrik, og Eirik

@@ -58,12 +58,12 @@ body {
     cursor: pointer;
 }
 .text-type-poster-header {
-    font-size: 10vh;
+    font-size: 4vw;
     font-family: 'Spartan', 'Montserrat', sans-serif;
     font-weight: 900;
 }
 .text-type-poster-underline {
-    font-size: 4vh;
+    font-size: 2vw;
     font-family: 'Spartan', 'Montserrat', sans-serif;
     font-weight: 600;
 }
@@ -93,7 +93,6 @@ header {
 }
 .frontpage {
     display: flex;
-    flex-direction: row;
     width: 80vw;
 }
 .frontpage-image {
@@ -145,17 +144,27 @@ header {
 .frontpage-poster {
     padding: 3vh 3vw;
     border-radius: 10px;
-    background-color: red;
+}
+.frontpage-poster:hover {
+    padding-left: 4vw;
+    padding-top: 3.5vh;
+    transition: 300ms;
+    cursor: pointer;
 }
 .frontpage-poster-left { 
     grid-area: frontpage-poster-left;
     background-image: url(../BILDER/oneplus8pro2.webp);
-    background-position: bottom left;
+    background-position: center;
+    background-size: cover;
     background-repeat: repeat-x;
 }
 
 .frontpage-poster-right {
     grid-area: frontpage-poster-right;
+    background-image: url(../BILDER/Product-oneplus9pro-morningmist-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
 }
 
 
