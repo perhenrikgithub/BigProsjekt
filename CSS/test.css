@@ -5,14 +5,14 @@
     list-style: none;
 }
 
-.hero {
+.frontpage-brandheader-container {
     width: 100%;
     height: 100vh;
     max-height: 800px;
     background-color: whitesmoke;
     position: relative;
 }
-.slider {
+.frontpage-brandheader-wrapper {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -20,7 +20,7 @@
     transition: all 100ms;
     overflow: hidden;
 }
-.slider .slide {
+.frontpage-brandheader-wrapper .frontpage-brandheader-single {
     width: 25%;
     height: 100%;
     position: relative;
@@ -30,31 +30,31 @@
     place-items: center;
     
 }
-.slider .slide:nth-child(1) {
+.frontpage-brandheader-wrapper .frontpage-brandheader-single:nth-child(1) {
     background: url(../BILDER/Apple-Poster1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.slider .slide:nth-child(2) {
+.frontpage-brandheader-wrapper .frontpage-brandheader-single:nth-child(2) {
     background: url(../BILDER/Samsung-poster1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.slider .slide:nth-child(3) {
+.frontpage-brandheader-wrapper .frontpage-brandheader-single:nth-child(3) {
     background: url(../BILDER/OnePlus-poster2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.slider .slide:nth-child(4) {
+.frontpage-brandheader-wrapper .frontpage-brandheader-single:nth-child(4) {
     background: url(../BILDER/Xiaomi-poster1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.slider .slide:hover {
+.frontpage-brandheader-wrapper .frontpage-brandheader-single:hover {
     width: 60%;
     cursor: pointer;
 }
@@ -62,7 +62,7 @@
 
 /* Hero Brand-Logo */
 
-.hero-logo-container {
+.frontpage-brandheader-logo {
     max-width: 250px;
     max-height: 250px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -71,7 +71,7 @@
     display: grid;
     place-items: center;
 }
-.hero-logo-container img {
+.frontpage-brandheader-logo img {
     max-width: 100px;
     max-height: 100px;
     width: 100%;

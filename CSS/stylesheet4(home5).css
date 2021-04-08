@@ -1,0 +1,255 @@
+/*==============
+   Table of contents
+    1. General
+        1.1 :root * etc.
+        1.2 Typgraphy
+    2.Header
+    3.
+    4.
+
+==============
+   1. General
+==============*/
+    /* 1.1 :root * etc. */
+:root {
+    --main: rgba((0,0,0,0.95));
+    --main-fade: rgba(0,0,0,0.85);
+    --main-more-fade: rgba(0,0,0,0.35);
+    --white: rgba(255,255,255,0.9);
+    --white-fade: rgba(255,255,255,0.8);
+    --brandcolor: blue;
+
+    --hoved: rgba(0,0,0,0.95);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+body {
+    background-color: black;
+}
+    /* 1.2 Typography */
+.text-type-header {
+    font-size: 18vw;
+}
+.text-type-underline {
+    font-size: 1.4vw;
+}
+.text-type-article-header {
+    font-size: 5vw;
+    font-weight: 500;
+    color: var(--main-fade);
+}
+.text-type-article-paragraph {
+    font-size: 1vw;
+    font-weight: 500;
+    color: var(--main-more-fade);
+    padding: 15px 15px 15px 0;
+}
+.text-type-linkstyle-large {
+    font-weight: 600;
+    color: var(--brandcolor);
+}
+.text-type-linkstyle-large:hover {
+    color: blue;
+    padding-left: 3%;
+    transition: 400ms cubic-bezier(0.83,-0.15, 0.79, 2.07);
+    cursor: pointer;
+}
+.text-type-linkstyle-small {
+    padding-top: 10vh;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1vw;
+    cursor: pointer;
+}
+.text-type-poster-header {
+    font-size: 4vw;
+    font-family: 'Spartan', 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.text-type-poster-underline {
+    font-size: 2vw;
+    font-family: 'Spartan', 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+/*==============
+    2. header
+==============*/
+.header-container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: black;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    color: var(--brandcolor);
+    font-weight: 900;
+    text-align: center;
+}
+/*==============
+    3. Frontpage
+==============*/
+.frontpage-container {
+    display: grid;
+    place-items: center;
+}
+.frontpage {
+    display: flex;
+    width: 80vw;
+}
+.frontpage-image {
+    background-image: url(../BILDER/gradient.png);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+.frontpage-nav-producttype {
+    width: 50%;
+    display: grid;
+    place-items: center;
+    font-family: 'Spartan', 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: var(--main);
+    font-size: 7vw;
+}
+.frontpage-nav-producttype ul {
+    padding: 2vh 2vw;
+    list-style: none;
+}
+
+/*==============
+    4. frontpage article
+==============*/
+.frontpage-article {
+    height: 40vh;   
+}
+/*==============
+    5. frontpage poster
+==============*/
+.frontpage-poster-container-container {
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    place-items: center;
+    /* background-color: green; */
+}
+.frontpage-poster-container {
+    width: 80vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+    "frontpage-poster-left frontpage-poster-right";
+}
+.frontpage-poster {
+    padding: 3vh 3vw;
+    border-radius: 10px;
+}
+.frontpage-poster:hover {
+    padding-left: 4vw;
+    padding-top: 3.5vh;
+    transition: 300ms;
+    cursor: pointer;
+}
+.frontpage-poster-left { 
+    grid-area: frontpage-poster-left;
+    background-image: url(../BILDER/oneplus8pro2.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+    
+.frontpage-poster-right {
+    grid-area: frontpage-poster-right;
+    background-image: url(../BILDER/Product-oneplus9pro-morningmist-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+    
+    /* =========
+    brandheader
+    ========== */
+
+
+.frontpage-brandheader-container {
+    width: 100%;
+    height: 100vh;
+    max-height: 800px;
+    background-color: whitesmoke;
+    position: relative;
+}
+.frontpage-brandheader-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    transition: all 100ms;
+    overflow: hidden;
+}
+.frontpage-brandheader-wrapper .frontpage-brandheader-single {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    transition: 200ms;
+    display: grid;
+    place-items: center;
+    
+}
+.frontpage-brandheader-wrapper .frontpage-brandheader-single:nth-child(1) {
+    background: url(../BILDER/Apple-Poster1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.frontpage-brandheader-wrapper .frontpage-brandheader-single:nth-child(2) {
+    background: url(../BILDER/Samsung-poster1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.frontpage-brandheader-wrapper .frontpage-brandheader-single:nth-child(3) {
+    background: url(../BILDER/OnePlus-poster2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.frontpage-brandheader-wrapper .frontpage-brandheader-single:nth-child(4) {
+    background: url(../BILDER/Xiaomi-poster1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.frontpage-brandheader-wrapper .frontpage-brandheader-single:hover {
+    width: 60%;
+    cursor: pointer;
+}
+
+
+/* branHeader-logo */
+
+.frontpage-brandheader-logo {
+    max-width: 250px;
+    max-height: 250px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 2vh 2vw;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+}
+.frontpage-brandheader-logo img {
+    max-width: 100px;
+    max-height: 100px;
+    width: 100%;
+    height: 100%;
+}
+    
