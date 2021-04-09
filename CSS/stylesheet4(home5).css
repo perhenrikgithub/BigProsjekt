@@ -27,12 +27,17 @@
         --light-3: rgba(255,255,255,0.7);
         /* main */
         --maincolor: blue;
+    /* sizes */
+        /* top menu */
+        --top-menu-total-height: 8vh;
+        --top-menu-item-height: 6vh;
 }
 *{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     list-style: none;
+    
 }
 body {
     background-color: var(--light-1);
@@ -101,8 +106,69 @@ header {
     font-weight: 900;
     text-align: center;
 }
-header > {
-    transition: slide-in-from-left;
+/*==============
+    2/3. top-menu
+==============*/
+.top-menu {
+    width: 100%;
+    height: var(--top-menu-total-height);
+    background: var(--gray-1);
+
+    display: grid;
+    gap: 0 2vw;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    gap: 2vw;
+    grid-template-areas:
+    "menu-left menu-right"
+    ;
+
+    justify-content: center;
+
+}
+.top-menu-left {
+    grid-area: menu-left;
+    height: var(--top-menu-total-height);
+}
+.top-menu-logo {
+    display: grid;
+    place-items: center;
+}
+.top-menu-logo img{
+    height: var(--top-menu-item-height);
+    width: auto;
+}
+/*  */
+.top-menu-right {
+    grid-area: menu-right;
+    display: grid;
+    gap: 0 2vw;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    gap: 2vw;
+    grid-template-areas:
+    "menu-cart menu-burger"
+    ;
+}
+.top-menu-item{
+    
+    padding: calc(calc(var(--top-menu-total-height) - var(--top-menu-item-height))/2) 0;
+    height: var(--top-menu-item-height);
+    
+    display: grid;
+    place-items: center;
+}
+.top-menu-item img {
+    fill: var(--maincolor);
+    max-height: var(--top-menu-item-height);
+}
+.top-menu-shoppingcart {
+    grid-area: menu-cart;
+    max-width: var(--top-menu-item-height);
+}
+.top-menu-hamburger {
+    grid-area: menu-burger;
+    max-width: var(--top-menu-item-height);
 }
 
 /*==============
@@ -216,7 +282,6 @@ header > {
     transition: 200ms;
     display: grid;
     place-items: center;
-    
 }
 .frontpage-brandheader-wrapper .frontpage-brandheader-single:nth-child(1) {
     background: url(../BILDER/Apple-Poster1.jpeg);
@@ -272,10 +337,26 @@ header > {
  Keyframes Keyframes Keyframes
 
 ==============================*/
-
+.slideinleft {
+    animation: slide-in-from-left 500ms cubic-bezier(0.56, 0.97, 0.71, 1) forwards;
+}
+.slideinleft-2 {
+    animation: slide-in-from-left-2 600ms cubic-bezier(0.56, 0.97, 0.71, 1) forwards;
+}
+.slideinright {
+    animation: slide-in-from-right 500ms cubic-bezier(0.56, 0.97, 0.71, 1) forwards;
+}
 @keyframes slide-in-from-left {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-20%);
+      }
+    100% {
+    transform: translateX(0);
+    }
+}
+@keyframes slide-in-from-left-2 {
+    0% {
+        transform: translateX(-25%);
       }
     100% {
     transform: translateX(0);
@@ -283,7 +364,7 @@ header > {
 }
 @keyframes slide-in-from-right {
     0% {
-        transform: translateX(100%);
+        transform: translateX(20%);
       }
     100% {
     transform: translateX(0);

@@ -11,6 +11,34 @@
     </head>
 <body>
     
+    <nav class="navigasjon" role="navigation">
+        <div class="logotext">
+            <div>
+                <a href="index.html">Ask Menighetshus</a>
+            </div>
+        </div>
+        <!-- synlig på store sjermer -->
+        <div class="big-screen-nav">
+            <a href="index.html">
+                <img src="Bilder/cart-1.svg">
+            </a>
+            <a href="bilder.html">Book</a>
+            <a href="bilder.html">Bilder</a>
+            <a href="historie.html">Historie</a>
+        </div>
+        <!-- synlig på små sjermer -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Hjem</a>
+            <a href="bilder.html">Book Nå</a>
+            <a href="bilder.html">Se Bilder</a>
+            <a href="historie.html">Husets Historie</a>
+        </div>
+        <span id="hamburger" onclick="openNav()">&#9776;</span>
+    </nav>
+
+
+
     <header class="frontpage-brandheader-container">
         <ul class="frontpage-brandheader-wrapper">
             <li class="frontpage-brandheader-single" onclick="window.location.href = '#'">
