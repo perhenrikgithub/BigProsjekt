@@ -20,3 +20,11 @@
 .ikon-cart {
     background-image: url(../BILDER/IKON/add-to-basket.png);
 }
+/* ======== */
+#ikon-cart {
+    background-image: url(../BILDER/IKON/cart-1.svg);
+    fill: blue;
+}
+#ikon-cart {
+    background-image: url(../BILDER/IKON/menu.svg);
+}

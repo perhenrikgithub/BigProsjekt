@@ -126,6 +126,11 @@ header {
     justify-content: center;
 
 }
+/* =======================
+==========================
+========================== */
+
+
 .top-menu-left {
     grid-area: menu-left;
     height: var(--top-menu-total-height);
@@ -158,14 +163,20 @@ header {
     display: grid;
     place-items: center;
 }
-.top-menu-item img {
+.top-menu-item div {
+    
     fill: var(--maincolor);
     max-height: var(--top-menu-item-height);
 }
 .top-menu-shoppingcart {
     grid-area: menu-cart;
+    background: url(../BILDER/IKON/cart-1.svg);
     max-width: var(--top-menu-item-height);
 }
+.top-menu-shoppingcart:hover{
+    filter: invert(8%) sepia(100%) saturate(6598%) hue-rotate(246deg) brightness(105%) contrast(142%);
+}
+
 .top-menu-hamburger {
     grid-area: menu-burger;
     max-width: var(--top-menu-item-height);
