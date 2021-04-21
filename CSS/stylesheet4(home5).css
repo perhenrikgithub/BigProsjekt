@@ -11,33 +11,37 @@
    1. General
 ==============*/
     /* 1.1 :root * etc. */
-:root {
-    /* colors */
-        /* dark */
-        --dark-0: black;
-
-        --dark-1: rgba(0,0,0,0.95);
-        --dark-2: rgba(0,0,0,0.85);
-        --dark-3: rgba(0,0,0,0.35);
-        /* gray-ish */
-        --gray-1: rgba(255,255,255,0.4);
-        /* light */
-        --light-1: rgba(255,255,255,0.9);
-        --light-2: rgba(255,255,255,0.8);
-        --light-3: rgba(255,255,255,0.7);
-        /* main */
-        --maincolor: blue;
-    /* sizes */
-        /* top menu */
-        --top-menu-total-height: 8vh;
-        --top-menu-item-height: 6vh;
-}
+    :root {
+        /* colors */
+            /* dark */
+            --dark-0: black;
+    
+            --dark-1: rgba(0,0,0,0.95);
+            --dark-2: rgba(0,0,0,0.85);
+            --dark-3: rgba(0,0,0,0.35);
+            /* gray-ish */
+            --gray-1: rgba(255,255,255,0.4);
+            /* light */
+            --light-1: rgba(255,255,255,0.9);
+            --light-2: rgba(255,255,255,0.8);
+            --light-3: rgba(255,255,255,0.7);
+            /* main */
+            --maincolor: blue;
+            /* others */
+            --iphone-light: rgba(221,237,250,0.95);
+            --iphone-dark: rgba(119,141,175,0.95);
+        /* sizes */
+            /* top menu */
+            --top-menu-total-height: 8vh;
+            --top-menu-item-height: 6vh;
+            /* fontsixe */
+            --top-menu-fontsize-1: 3vh;
+    }
 *{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     list-style: none;
-    
 }
 body {
     background-color: var(--light-1);
@@ -342,6 +346,159 @@ header {
     height: 100%;
 }
 
+/* =========
+    ultimate-frontage
+    ========== */
+.ultimate-frontage {
+    height: 100vh;
+    width: 100%;
+    background: var(--dark-0);
+}
+
+.landingsplass-navigasjon {
+    height: var(--top-menu-total-height);
+    display: flex;
+    justify-content: space-around;
+    
+}
+.landingsplass-navigasjon-logo img{
+    height: var(--top-menu-item-height);
+    width: var(--top-menu-item-height);
+}
+.landingsplass-navigasjon-logo img:hover{
+    cursor: pointer;
+}
+.landingsplass-navigasjon-links-container{
+    display: grid;
+    place-items: center;
+    width: 50%;
+    height: 100%;
+}
+.landingsplass-navigasjon-links-container ul{
+    display: flex;
+}
+.landingsplass-navigasjon-links-container li + *{
+    list-style-type: disc;
+    color: var(--light-1); /* farger list-type (rundinger) */
+    margin-left: 2em;
+}
+.landingsplass-navigasjon-links-container a{
+    color: var(--light-1);
+    font-size: var(--top-menu-fontsize-1);
+    text-decoration: none;
+    /* padding: calc(calc(var(--top-menu-total-height)- var(--top-menu-fontsize-1))/2) 2vw; */
+}
+.landingsplass-navigasjon-links-container a:hover {
+    color: var(--light-3);
+}
+.landingsplass-navigasjon-ikoner {
+    width: 30%;
+}
+/* ===============
+landingsplass   -------------------
+================== */
+
+.landingsplass {
+    display: flex;
+    height: 60vh;
+}
+.landingsplass:hover {
+    cursor: default;
+}
+
+/* ===============
+landingsplass-tekst
+================== */
+
+.landingsplass-tekst {
+    width: 50vw;
+    background: black;
+    color: var(--iphone-light);
+
+    display: grid;
+    place-items: center;
+    text-align: left;
+
+    
+}
+.landingsplass-tekst div {
+    padding: 5vh 5vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 0px 0px;
+    font-weight: 300;
+    grid-template-areas:
+    "ingress"
+    "overskrift"
+    "paragraf"
+    "knapper";
+}
+.landingsplass-ingress {
+    grid-area: ingress;
+    padding: 0 0 2vh;
+    font-family: 'Spartan', 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.landingsplass-tekst h1 {
+    grid-area: overskrift;
+    padding: 0 0 2vh;
+    font-family: 'Spartan', 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 3.4em;
+}
+.landingsplass-paragraf {
+    grid-area: paragraf;
+}
+.landingsplass-tekst div div {
+    grid-area: knapper;
+    display: flex;
+    padding: 3vh 0;
+}
+.landingsplass-button {
+    font-size: 1.2em;
+    padding: 3% 8%;
+    text-decoration: none;
+    font-weight: 400;
+}
+.landingsplass-button-styled {
+    color: var(--dark-1);
+    background: var(--iphone-dark);
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 1000px; /*  lager pill-shape */
+    flex-wrap: nowrap;
+}
+.landingsplass-button-styled:hover {
+    background: var(--iphone-light);
+    transition: 100ms;
+}
+.landingsplass-button-notstyled {
+    color: var(--light-1);
+}
+.landingsplass-button-notstyled:hover {
+    color: #81c639; /* Android-grønn */
+    transition: 100ms;
+
+    /* :active -> blå????? */
+}
+
+/* ===============
+landingsplass-bilde
+================== */
+.landingsplass-bilde {
+    width: 50%;
+    background: #000;
+    display: grid;
+    place-items: center;
+}
+.landingsplass-bilde img {
+    width: 100%;
+    animation: appear-from-bottom 6000ms ease forwards;
+    
+    
+}
+
 
 /* =============================
 
@@ -379,5 +536,15 @@ header {
       }
     100% {
     transform: translateX(0);
+    }
+}
+@keyframes appear-from-bottom {
+    0% {
+        transform: translateY(8%);
+        opacity: 0;
+      }
+    100% {
+        transform: translateY(0);
+        opacity: 0.8;
     }
 }
